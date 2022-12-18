@@ -23,6 +23,7 @@ Magento 2 Xero Integration Extension allows you to integrate your Magento 2 Onli
 6. Insert Invoice numbers according to your XERO invoice nubering sequence in collumn K (*InvoiceNumber)
 
 *** Tweaking ***
+
 Edit "Controller/Adminhtml/Export/Csv.php" line 102-138 to adjust static parameters such as Currency, Account Code and Tax Type
 
 The current logic sets "20% (VAT on Income)" for all orders, except if Shipping Description contains "Int" (i.e. International) or customer group is 5 (i.e. the group has non-vatable customes) - in which case the tax code is "No VAT" 
