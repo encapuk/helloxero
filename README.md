@@ -26,7 +26,7 @@ Magento 2 Xero Integration Extension allows you to integrate your Magento 2 Onli
 
 Edit "Controller/Adminhtml/Export/Csv.php" line 102-138 to adjust static parameters such as Currency, Account Code and Tax Type
 
-The current logic sets "20% (VAT on Income)" for all orders, except if Shipping Description contains "Int" (i.e. International) or customer group is 5 (i.e. the group has non-vatable customes) - in which case the tax code is "No VAT" 
+The current logic sets "20% (VAT on Income)" for all orders, except if Shipping Description contains "Int" (i.e. International) or customer group is 5 (e.g. the group with non-vatable customes) - in which case the tax code is "No VAT" 
 
 The extension is Free and open source (GPL)
 Any questions or suggestions please email to hello@encap.uk
