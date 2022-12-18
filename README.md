@@ -1,17 +1,21 @@
 # HelloXero
-This Magento 2 module helps to export selected orders to XERO CSV-formated file.
+This Magento 2 module helps to export selected orders to XERO CSV-formated file. It has been tested with Magento 2.4.x versions
 
-This will create a CSV file in your Downloads folder. After downloading the data, you can import the file into Xero.
-
-
-Magento 2 Xero Integration Extension allows you to integrate your Magento 2 Online Store with Xero Accounting Application. The extension makes it easy to pulling order data to a CSV format, which can be imported to XERO.
+Magento 2 Xero Integration Extension allows you to integrate your Magento 2 Online Store with Xero Accounting Application. The extension makes it easy pulling order data to CSV format, which can be imported to XERO.
 
 
 *** How to install ***
 
-1. Copy files to your app folder
-2. Run bin/magento setup:upgrade  &&  bin/magento ca:cl
-
+1. Copy files to your app/code folder
+2. Execute the following code:
+bin/magento maintenance:enable
+bin/magento module:enable Encap_HelloXero
+bin/magento setup:upgrade   
+(for production mode only) bin/magento setup:di:compile 
+(for production mode only) bin/magento setup:static-content:deploy 
+bin/magento indexer:reindex
+bin/magento ca:fl
+bin/magento maintenance:disable
 
 *** Usage ***
 
